@@ -142,10 +142,10 @@ Suppose we have the same scenario as before, except the user has supplied their 
 - The DID: `did:plc:12345`
 - The hosting service: `https://pds.com`
 
-We perform a DNS lookup for TXT records on `atproto.alice.com` to discover an entry like `did=did:plc:12345`
+We perform a DNS lookup for TXT records on `_atproto.alice.com` to discover an entry like `did=did:plc:12345`
 
 ```sh
-dig +short atproto.alice.com TXT
+dig +short _atproto.alice.com TXT
 ```
 
 Then we resolve the DID as before:
